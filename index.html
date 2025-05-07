@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Web Bundle with Event Handling, Interactive Elements, and Form Validation">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Event Handling, Form Validation, Interactive Elements">
+    <title>Interactive Web Bundle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Bundle</h1>
+    </header>
+
+    <main>
+        <!-- Event Handling Section -->
+        <section class="event-section">
+            <h2>Event Handling 🎈</h2>
+            
+            <div class="event-box">
+                <button id="click-button" class="interactive-button">Click Me!</button>
+                <p id="click-output">Button not clicked yet</p>
+            </div>
+            
+            <div class="event-box hover-box">
+                <p>Hover over me!</p>
+                <div class="hover-effect"></div>
+            </div>
+            
+            <div class="event-box">
+                <p>Press any key:</p>
+                <div id="keypress-display">Waiting for keypress...</div>
+                <input type="text" id="keypress-input" placeholder="Type here">
+            </div>
+            
+            <div class="event-box secret-box">
+                <p>Double click or long press me for a secret!</p>
+            </div>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section class="interactive-section">
+            <h2>Interactive Elements 🎮</h2>
+            
+            <div class="interactive-box">
+                <button id="color-changer" class="interactive-button">Change My Color</button>
+            </div>
+            
+            <div class="gallery-container">
+                <h3>Image Gallery</h3>
+                <div class="gallery">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmboq-JlUQB8vq2-fy5BcW-Dkd6oo7HPDnDUCTexmQ4AyCKMPbjxKq0ZU&s" alt="Nature" class="active">
+                    <img src="https://i.pinimg.com/736x/57/46/8d/57468d8387042651790a73ade6a0d224.jpg" alt="Water">
+                    <img src="https://i.pinimg.com/736x/8c/8e/82/8c8e8253f21a180be88fc67e409ae69f.jpg" alt="Mountain">
+                    <img src="https://i.pinimg.com/736x/12/cd/b6/12cdb66b40c6132edd159dda4c855f91.jpg" alt="City">
+                </div>
+                <div class="gallery-controls">
+                    <button id="prev-btn" class="gallery-btn">Previous</button>
+                    <button id="next-btn" class="gallery-btn">Next</button>
+                </div>
+            </div>
+            
+            <div class="tabs-container">
+                <h3>Tab System</h3>
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                    <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                </div>
+                <div class="tab-content active" id="tab1">
+                    <p>Content for Tab 1</p>
+                </div>
+                <div class="tab-content" id="tab2">
+                    <p>Content for Tab 2</p>
+                </div>
+                <div class="tab-content" id="tab3">
+                    <p>Content for Tab 3</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section class="form-section">
+            <h2>Form Validation 📋</h2>
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="name">Name (required):</label>
+                    <input type="text" id="name" required>
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password (min 8 chars):</label>
+                    <input type="password" id="password">
+                    <div class="error-message" id="password-error"></div>
+                    <div class="password-strength">
+                        <div class="strength-bar"></div>
+                        <span class="strength-text">Password strength</span>
+                    </div>
+                </div>
+                
+                <button type="submit" class="interactive-button">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
